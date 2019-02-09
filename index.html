@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
-    <div class="container">
-        <div class="inside">
-            <span>Some Text Here</span>
+    <div class="mainContainer">
+        <nav>
+            <div class="leftNav"></div>
+            <div class="rightNav">
+                <ul>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Locations</li>
+                    <li>Jobs</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="mainLogo"></div>
+            <p class="slogan">Best Quality Burgers in town. Off the charts.</p>
+        </div>
+        <div class="bottom">
+            <div class="subscribe">
+                <h3>Subscribe Today</h3>
+                <p>Dont miss out on discounts!</p>
+                <form>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="number">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="locations"></div>
         </div>
     </div>
-
 </body>
 </html>
