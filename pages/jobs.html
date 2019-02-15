@@ -20,27 +20,33 @@
 </head>
 <body>
 <iframe src="../pages/navbar.html" class="mynavbar"></iframe>
-<div class="mainContainer">
+<div class="container">
     <h1>Jobs</h1>
     <h2>Join our great team!</h2>
     <form>
-        <div class="name">
+        <div class="form-group">
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName">
+            <input class="form-control" type="text" id="firstName">
+        </div>
+        <div class="form-group">
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName">
+            <input class="form-control" type="text" id="lastName">
         </div>
-        <div class="address">
+        <div class="form-group">
             <label for="address1">Street Address:</label>
-            <input type="text" id="address1">
-            <label for="address2">Line 2:</label>
-            <input type="text" id="address2">
+            <input class="form-control" type="text" id="address1">
         </div>
-        <div class="cityStateZip">
+        <div class="form-group">
+            <label for="address2">Address Line 2:</label>
+            <input class="form-control" type="text" id="address2">
+        </div>
+        <div class="form-group">
             <label for="city">City:</label>
-            <input type="text" id="city">
+            <input class="form-control" type="text" id="city">
+        </div>
+        <div class="form-group">
             <label for="state">State:</label>
-            <select id="state">
+            <select class="form-control" id="state">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -93,41 +99,51 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
+        </div>
+        <div class="form-group">
             <label for="zipCode">Zip:</label>
-            <input type="text" id="zipCode">
+            <input class="form-control" type="text" id="zipCode">
         </div>
-        <div class="phoneEmail">
+        <div class="form-group">
             <label for="phone">Phone Number:</label>
-            <input type="text" id="phone">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email">
+            <input class="form-control" type="text" id="phone">
         </div>
-        <div class="workHistory">
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input class="form-control" type="email" id="email">
+        </div>
+        <div class="form-group">
             <h3>Work History</h3>
             <p>
                 Tell us about your last two jobs. What did you do? Who did you work
                 for? How long were you there?
             </p>
             <label for="job1"></label>
-            <textarea id="job1"></textarea>
+            <textarea class="form-control" id="job1"></textarea>
             <label for="job2"></label>
-            <textarea id="job2"></textarea>
+            <textarea class="form-control" id="job2"></textarea>
         </div>
-        <div class="availability">
+        <div>
             <h3>Availability</h3>
-            <label for="daytime">Daytime:</label>
-            <input type="checkbox" id="daytime">
-            <label for="evenings">Evenings:</label>
-            <input type="checkbox" id="evenings">
-            <label for="anytime">Anytime:</label>
-            <input type="checkbox" id="anytime">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="daytime">
+                <label class="form-check-label" for="daytime">Daytime</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="evenings">
+                <label class="form-check-label" for="evenings">Evenings</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="anytime">
+                <label class="form-check-label" for="anytime">Anytime</label>
+            </div>
         </div>
-        <div class="comments">
+        <div class="form-group">
             <p>What makes you a great fit?</p>
             <label for="greatFit"></label>
-            <textarea id="greatFit"></textarea>
+            <textarea class="form-control" id="greatFit"></textarea>
         </div>
-        <input type="submit">
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 </div>
