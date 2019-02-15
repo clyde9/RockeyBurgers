@@ -7,7 +7,23 @@ html, body {
 .mynavbar {
   width: 100%;
   border: none;
-  height: 60px; }
+  height: 65px; }
 
-.socialMediaIcon {
-  height: 50px; }
+.container {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.menu {
+  background-image: url("../images/menu_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; }
+
+.menuTitle {
+  text-align: center;
+  padding-top: 100px; }
+
+.menuSection {
+  width: 550px; }
